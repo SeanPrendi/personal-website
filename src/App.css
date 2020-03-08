@@ -1,38 +1,180 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #fbfbf9;
 }
 
 .App-header {
   background-color: #282c34;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro");
+
+.ghost-button {
+  display: inline-block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 24px;
+  outline: none;
+  text-decoration: none;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: -5px;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #222;
+  border: 2px solid #000;
+  color: #fff;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.firstParallax {
   min-height: 100vh;
+  min-width: 100vw;
+}
+
+.titleText {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: Montserrat;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.secondParallax {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.headshotContainer {
+  flex: 5;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.headshot {
+  width: 50vh;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 50% 28%;
+}
+
+.aboutMeContent {
+  text-align: left;
+  padding-right: 5vw;
+  padding-top: -3vh;
+}
+
+.aboutMeText {
+  font-size: 36px;
+}
+
+.aboutMeBody {
+  font-weight: 300;
+  font-size: 26px;
+}
+
+.parallaxThree {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.parallaxFour {
+  min-height: 110vh;
+  min-width: 100vw;
+}
+
+.projectsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.projectsHeaderText {
+  padding-top: 3vh;
+}
+
+.leftProjectContainer {
+  display: flex;
+  width: 60vw;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: flex-start;
+  padding-left: 2vw;
+}
+
+.projectLogo {
+  width: 25vw;
+  height: 30vh;
+}
+
+.leftProjectDescCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 2vw;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.rightProjectContainer {
+  display: flex;
+  width: 60vw;
+  flex-direction: row;
+  align-items: flex-end;
+  align-self: flex-end;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-right: 2vw;
 }
 
-.App-link {
-  color: #61dafb;
+.rightProjectDescCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 2vw;
+  align-items: flex-start;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.projectTitleText {
+  font-weight: 600;
+  font-size: 26px;
+  margin: 0px;
+}
+
+.projectBodyText {
+  font-weight: 300;
+  font-size: 26px;
+  text-align: left;
+  margin: 0px;
 }
