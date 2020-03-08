@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.3dc39b34.chunk.css",
-    "main.js": "/static/js/main.52c86b63.chunk.js",
-    "main.js.map": "/static/js/main.52c86b63.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.edaf7a34.js",
-    "runtime-main.js.map": "/static/js/runtime-main.edaf7a34.js.map",
-    "static/js/2.1423d8c0.chunk.js": "/static/js/2.1423d8c0.chunk.js",
-    "static/js/2.1423d8c0.chunk.js.map": "/static/js/2.1423d8c0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9544baed63f5ffbd1857e80d6a0dd08f.js": "/precache-manifest.9544baed63f5ffbd1857e80d6a0dd08f.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.3dc39b34.chunk.css.map": "/static/css/main.3dc39b34.chunk.css.map",
-    "static/js/2.1423d8c0.chunk.js.LICENSE.txt": "/static/js/2.1423d8c0.chunk.js.LICENSE.txt",
-    "static/media/Apple.png": "/static/media/Apple.198057eb.png",
-    "static/media/Hack-112.jpg": "/static/media/Hack-112.18408ba0.jpg",
-    "static/media/Headshot.png": "/static/media/Headshot.e9d5d157.png",
-    "static/media/Photo.jpg": "/static/media/Photo.290fe192.jpg",
-    "static/media/momentsCrop.png": "/static/media/momentsCrop.a305679d.png",
-    "static/media/nextUpLogo.png": "/static/media/nextUpLogo.7acf1881.png",
-    "static/media/resume.pdf": "/static/media/resume.9389b410.pdf"
+    "main.css": "/seanprendi.github.io/personal-website/static/css/main.3dc39b34.chunk.css",
+    "main.js": "/seanprendi.github.io/personal-website/static/js/main.a447ce67.chunk.js",
+    "main.js.map": "/seanprendi.github.io/personal-website/static/js/main.a447ce67.chunk.js.map",
+    "runtime-main.js": "/seanprendi.github.io/personal-website/static/js/runtime-main.ab63be39.js",
+    "runtime-main.js.map": "/seanprendi.github.io/personal-website/static/js/runtime-main.ab63be39.js.map",
+    "static/js/2.1423d8c0.chunk.js": "/seanprendi.github.io/personal-website/static/js/2.1423d8c0.chunk.js",
+    "static/js/2.1423d8c0.chunk.js.map": "/seanprendi.github.io/personal-website/static/js/2.1423d8c0.chunk.js.map",
+    "index.html": "/seanprendi.github.io/personal-website/index.html",
+    "precache-manifest.9dac3952cb9a1e8fd28dd2836a916ef6.js": "/seanprendi.github.io/personal-website/precache-manifest.9dac3952cb9a1e8fd28dd2836a916ef6.js",
+    "service-worker.js": "/seanprendi.github.io/personal-website/service-worker.js",
+    "static/css/main.3dc39b34.chunk.css.map": "/seanprendi.github.io/personal-website/static/css/main.3dc39b34.chunk.css.map",
+    "static/js/2.1423d8c0.chunk.js.LICENSE.txt": "/seanprendi.github.io/personal-website/static/js/2.1423d8c0.chunk.js.LICENSE.txt",
+    "static/media/Apple.png": "/seanprendi.github.io/personal-website/static/media/Apple.198057eb.png",
+    "static/media/Hack-112.jpg": "/seanprendi.github.io/personal-website/static/media/Hack-112.18408ba0.jpg",
+    "static/media/Headshot.png": "/seanprendi.github.io/personal-website/static/media/Headshot.e9d5d157.png",
+    "static/media/Photo.jpg": "/seanprendi.github.io/personal-website/static/media/Photo.290fe192.jpg",
+    "static/media/momentsCrop.png": "/seanprendi.github.io/personal-website/static/media/momentsCrop.a305679d.png",
+    "static/media/nextUpLogo.png": "/seanprendi.github.io/personal-website/static/media/nextUpLogo.7acf1881.png",
+    "static/media/resume.pdf": "/seanprendi.github.io/personal-website/static/media/resume.9389b410.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.edaf7a34.js",
+    "static/js/runtime-main.ab63be39.js",
     "static/js/2.1423d8c0.chunk.js",
     "static/css/main.3dc39b34.chunk.css",
-    "static/js/main.52c86b63.chunk.js"
+    "static/js/main.a447ce67.chunk.js"
   ]
 }
