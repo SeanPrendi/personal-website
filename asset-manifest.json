@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.115ac166.chunk.css",
-    "main.js": "/static/js/main.8ed5073a.chunk.js",
-    "main.js.map": "/static/js/main.8ed5073a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.edaf7a34.js",
-    "runtime-main.js.map": "/static/js/runtime-main.edaf7a34.js.map",
-    "static/js/2.1423d8c0.chunk.js": "/static/js/2.1423d8c0.chunk.js",
-    "static/js/2.1423d8c0.chunk.js.map": "/static/js/2.1423d8c0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.073e16b25eba322fdb954316f5c0377b.js": "/precache-manifest.073e16b25eba322fdb954316f5c0377b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.115ac166.chunk.css.map": "/static/css/main.115ac166.chunk.css.map",
-    "static/js/2.1423d8c0.chunk.js.LICENSE.txt": "/static/js/2.1423d8c0.chunk.js.LICENSE.txt",
-    "static/media/Apple.png": "/static/media/Apple.198057eb.png",
-    "static/media/Hack-112.jpg": "/static/media/Hack-112.18408ba0.jpg",
-    "static/media/Headshot.png": "/static/media/Headshot.e9d5d157.png",
-    "static/media/Photo.jpg": "/static/media/Photo.290fe192.jpg",
-    "static/media/momentsCrop.png": "/static/media/momentsCrop.a305679d.png",
-    "static/media/nextUpLogo.png": "/static/media/nextUpLogo.7acf1881.png",
-    "static/media/resume.pdf": "/static/media/resume.9389b410.pdf"
+    "main.css": "./static/css/main.115ac166.chunk.css",
+    "main.js": "./static/js/main.6f50ef96.chunk.js",
+    "main.js.map": "./static/js/main.6f50ef96.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.de842222.js",
+    "runtime-main.js.map": "./static/js/runtime-main.de842222.js.map",
+    "static/js/2.1423d8c0.chunk.js": "./static/js/2.1423d8c0.chunk.js",
+    "static/js/2.1423d8c0.chunk.js.map": "./static/js/2.1423d8c0.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.25cc4023ad7474b8c6c0f2c1e978d8e1.js": "./precache-manifest.25cc4023ad7474b8c6c0f2c1e978d8e1.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.115ac166.chunk.css.map": "./static/css/main.115ac166.chunk.css.map",
+    "static/js/2.1423d8c0.chunk.js.LICENSE.txt": "./static/js/2.1423d8c0.chunk.js.LICENSE.txt",
+    "static/media/Apple.png": "./static/media/Apple.198057eb.png",
+    "static/media/Hack-112.jpg": "./static/media/Hack-112.18408ba0.jpg",
+    "static/media/Headshot.png": "./static/media/Headshot.e9d5d157.png",
+    "static/media/Photo.jpg": "./static/media/Photo.290fe192.jpg",
+    "static/media/momentsCrop.png": "./static/media/momentsCrop.a305679d.png",
+    "static/media/nextUpLogo.png": "./static/media/nextUpLogo.7acf1881.png",
+    "static/media/resume.pdf": "./static/media/resume.9389b410.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.edaf7a34.js",
+    "static/js/runtime-main.de842222.js",
     "static/js/2.1423d8c0.chunk.js",
     "static/css/main.115ac166.chunk.css",
-    "static/js/main.8ed5073a.chunk.js"
+    "static/js/main.6f50ef96.chunk.js"
   ]
 }
