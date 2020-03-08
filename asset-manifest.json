@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.115ac166.chunk.css",
-    "main.js": "/static/js/main.8ed5073a.chunk.js",
-    "main.js.map": "/static/js/main.8ed5073a.chunk.js.map",
+    "main.css": "/static/css/main.3dc39b34.chunk.css",
+    "main.js": "/static/js/main.52c86b63.chunk.js",
+    "main.js.map": "/static/js/main.52c86b63.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.edaf7a34.js",
     "runtime-main.js.map": "/static/js/runtime-main.edaf7a34.js.map",
     "static/js/2.1423d8c0.chunk.js": "/static/js/2.1423d8c0.chunk.js",
     "static/js/2.1423d8c0.chunk.js.map": "/static/js/2.1423d8c0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.073e16b25eba322fdb954316f5c0377b.js": "/precache-manifest.073e16b25eba322fdb954316f5c0377b.js",
+    "precache-manifest.9544baed63f5ffbd1857e80d6a0dd08f.js": "/precache-manifest.9544baed63f5ffbd1857e80d6a0dd08f.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.115ac166.chunk.css.map": "/static/css/main.115ac166.chunk.css.map",
+    "static/css/main.3dc39b34.chunk.css.map": "/static/css/main.3dc39b34.chunk.css.map",
     "static/js/2.1423d8c0.chunk.js.LICENSE.txt": "/static/js/2.1423d8c0.chunk.js.LICENSE.txt",
     "static/media/Apple.png": "/static/media/Apple.198057eb.png",
     "static/media/Hack-112.jpg": "/static/media/Hack-112.18408ba0.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.edaf7a34.js",
     "static/js/2.1423d8c0.chunk.js",
-    "static/css/main.115ac166.chunk.css",
-    "static/js/main.8ed5073a.chunk.js"
+    "static/css/main.3dc39b34.chunk.css",
+    "static/js/main.52c86b63.chunk.js"
   ]
 }
