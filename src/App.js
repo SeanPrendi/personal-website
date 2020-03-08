@@ -31,7 +31,7 @@ function App() {
         <div className="secondParallax">
           <div className="aboutMeContainer">
             <div className="headshotContainer">
-              <img src={`/${Headshot}`} className="headshot" alt="headshot" />
+              <img src={Headshot} className="headshot" alt="headshot" />
             </div>
             <div className="aboutMeContent">
               <h1 className="aboutMeText">About Me</h1>
