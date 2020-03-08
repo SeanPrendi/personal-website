@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 import BGphoto from "./assets/Photo.jpg";
 import Hack112 from "./assets/Hack-112.jpg";
@@ -21,7 +20,7 @@ function App() {
               Discrete Math and Logic <br /> Carnegie Mellon Class of 2022
             </h1>
             <div className="buttonContainer">
-              <a href={Resume} target="_blank">
+              <a href={Resume}>
                 <div class="ghost-button">Resume</div>
               </a>
             </div>
