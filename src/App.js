@@ -71,18 +71,23 @@ function App() {
             <h1 className="projectsHeaderText">Projects</h1>
             {/* Moments */}
             <div className="leftProjectContainer">
-              <img
-                src={MomentsLogo}
-                className="projectLogo"
-                alt="MomentsLogo"
-              />
+              <a
+                href="https://github.com/jchengjr77/moments-app"
+                className="logoWrapper"
+              >
+                <img
+                  src={MomentsLogo}
+                  className="projectLogo"
+                  alt="MomentsLogo"
+                />
+              </a>
               <div className="leftProjectDescCont">
                 <h1 className="projectTitleText">Moments</h1>
                 <h2 className="projectBodyText">
                   Moments is cross-platform social media app designed to be user
                   focused and facilitate happiness and remind you of the good
                   moments in your life. It's built using react native with expo
-                  for the front-end and firebase for data storage.
+                  for the front-end and firebase for data storage. <br />
                 </h2>
               </div>
             </div>
@@ -96,16 +101,38 @@ function App() {
                   front-end with a flask backend, connected via the axios
                   toolkit.
                 </h2>
+                <h3 style={{ fontWeight: "300", marginTop: 5 }}>
+                  <b>Collaborators: </b>
+                  <a href="https://vigneshrajmohan.github.io/">
+                    Vignesh Rajmohan
+                  </a>
+                  , <a href="https://diegosanmiguel.me/">Diego San Miguel</a>,{" "}
+                  <a href="https://www.maehoad.com/">Mae Hoad</a>
+                </h3>
               </div>
-              <img src={NextUpLogo} className="projectLogo" alt="NextUpLogo" />
+              <a
+                href="https://github.com/diegofinni/NextUp"
+                className="logoWrapper"
+              >
+                <img
+                  src={NextUpLogo}
+                  className="projectLogo"
+                  alt="NextUpLogo"
+                />
+              </a>
             </div>
             {/* Calorimager */}
             <div className="leftProjectContainer">
-              <img
-                src={Calorimager}
-                className="projectLogo"
-                alt="CalorimagerLogo"
-              />
+              <a
+                href="https://github.com/SeanPrendi/Calorimager"
+                className="logoWrapper"
+              >
+                <img
+                  src={Calorimager}
+                  className="projectLogo"
+                  alt="CalorimagerLogo"
+                />
+              </a>
               <div className="leftProjectDescCont">
                 <h1 className="projectTitleText">Calorimager</h1>
                 <h2 className="projectBodyText">

@@ -133,9 +133,14 @@
   padding-left: 2vw;
 }
 
+.logoWrapper {
+  width: 45%;
+  height: 45%;
+}
+
 .projectLogo {
-  width: 30%;
-  height: 30%;
+  width: 100%;
+  height: 100%;
 }
 
 .leftProjectDescCont {
