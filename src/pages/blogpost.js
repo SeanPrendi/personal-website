@@ -7,7 +7,9 @@ import RemarkMathPlugin from "remark-math";
 function MarkdownRender(props) {
   const newProps = {
     ...props,
-    plugins: [RemarkMathPlugin],
+    plugins: [
+      RemarkMathPlugin
+    ],
     renderers: {
       ...props.renderers,
       math: props => <MathJax.Node formula={props.value} />,
@@ -38,7 +40,7 @@ function BlogPost(props) {
   return (
     <div
       style={{
-        width: '60vw'
+        width: "60vw"
       }}
     >
       <div style={{ alignItems: "center" }}>
