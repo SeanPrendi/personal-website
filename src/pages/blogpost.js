@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
+import MathJax from "react-mathjax";
+import RemarkMathPlugin from "remark-math";
+
+function MarkdownRender(props) {
+  const newProps = {
+    ...props,
+    plugins: [RemarkMathPlugin],
+    renderers: {
+      ...props.renderers,
+      math: props => <MathJax.Node formula={props.value} />,
+      inlineMath: props => <MathJax.Node inline formula={props.value} />
+    }
+  };
+  return (
+    <MathJax.Provider input="tex">
+      <ReactMarkdown escapeHtml={false} {...newProps} />
+    </MathJax.Provider>
+  );
+}
 
 function BlogPost(props) {
   const [mdText, setMdText] = useState("");
@@ -17,14 +36,15 @@ function BlogPost(props) {
       .catch(error => console.error(error));
   });
   return (
-    <div>
-      <ReactMarkdown source={mdText} />
+    <div
+      style={{
+        width: '60vw'
+      }}
+    >
+      <div style={{ alignItems: "center" }}>
+        <MarkdownRender source={mdText} />
+      </div>
     </div>
-    // <div
-    //   dangerouslySetInnerHTML={{
-    //     __html: mdText
-    //   }}
-    // ></div>
   );
 }
 

@@ -1,8 +1,8 @@
 # Axioms, Definitions, and Theorems
 
-###### Sean Prendi
+### Sean Prendi
 
-###### May 25, 2020
+### May 25, 2020
 
 If you've ever cracked open a math textbook, you've probably seen the words **theorem** and **definition** thrown around, but it might not be immediately obvious how these things differ. And if you've ever done proofs, you may have heard someone reference the idea of an **axiom**, but it's not always obvious what these things are and how they differ. In this article, I will explore the definition of each of these terms, explain how I think about each of them, and explore how they're all connected but different through something called the Peano Axioms.
 

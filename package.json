@@ -15,9 +15,12 @@
     "react-dom": "^16.13.0",
     "react-markdown": "^4.3.1",
     "react-markdown-plus": "^0.1.1-a",
+    "react-mathjax": "^1.0.1",
     "react-parallax": "^3.0.3",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "remark-footnotes": "^1.0.0",
+    "remark-math": "^2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

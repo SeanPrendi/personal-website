@@ -7,7 +7,7 @@ import postlist from "./data/postlist";
 import posts from "./data/posts";
 
 function App() {
-  console.log(posts)
+  console.log(posts);
   return (
     <Router>
       <Switch>
@@ -20,7 +20,15 @@ function App() {
         {postlist.map((post, idx) => {
           return (
             <Route path={"/" + post} key={idx}>
-              <BlogPost post={posts[post]} />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center"
+                }}
+              >
+                <BlogPost post={posts[post]} />
+              </div>
             </Route>
           );
         })}
