@@ -27,14 +27,14 @@ export default function TopBar() {
         <Nav className="mr-auto" navbar>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
-              Options
+              Sections
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem href="/">Home</DropdownItem>
-              <DropdownItem href="#About">About Me</DropdownItem>
-              <DropdownItem href="#Projects">Projects</DropdownItem>
-              <DropdownItem href="#BlogPosts">Blog Posts</DropdownItem>
-              <DropdownItem href="#ContactMe">Contact Me</DropdownItem>
+              <DropdownItem href="/#About">About Me</DropdownItem>
+              <DropdownItem href="/#Projects">Projects</DropdownItem>
+              <DropdownItem href="/#BlogPosts">Blog Posts</DropdownItem>
+              <DropdownItem href="/#ContactMe">Contact Me</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>

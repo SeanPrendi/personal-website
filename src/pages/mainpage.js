@@ -1,20 +1,19 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import { withRouter, Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import BGphoto from "../assets/Photo.jpg";
 import Hack112 from "../assets/Hack-112.jpg";
+import Frisbee from "../assets/Frisbee.png";
 import Headshot from "../assets/Headshot.png";
 import MomentsLogo from "../assets/momentsCrop.png";
 import NextUpLogo from "../assets/nextUpLogo.png";
 import Calorimager from "../assets/Apple.png";
 import Resume from "../data/resume.pdf";
 import "../App.css";
-import TopBar from "../components/topbar";
 
 function MainPage() {
   return (
     <div className="App">
-      <TopBar />
       {/* eslint-disable-next-line  */}
       <a name="">
         <Parallax bgImage={BGphoto} strength={600}>
@@ -28,9 +27,6 @@ function MainPage() {
                 <a href={Resume}>
                   <div class="ghost-button">Resume</div>
                 </a>
-                <Link to="/blog">
-                  <div class="ghost-button">blog</div>
-                </Link>
               </div>
             </div>
           </div>
@@ -116,7 +112,14 @@ function MainPage() {
                     react front-end with a flask backend, connected via the
                     axios toolkit.
                   </h2>
-                  <h3 style={{ fontWeight: "300", marginTop: 5, fontSize: 17, textAlign: "left" }}>
+                  <h3
+                    style={{
+                      fontWeight: "300",
+                      marginTop: 5,
+                      fontSize: 17,
+                      textAlign: "left"
+                    }}
+                  >
                     <b>Collaborators: </b>
                     <a href="https://vigneshrajmohan.github.io/">
                       Vignesh Rajmohan
@@ -159,6 +162,48 @@ function MainPage() {
                     its size and type.
                   </h2>
                 </div>
+              </div>
+            </div>
+            <h1 className="projectsHeaderText"></h1>
+          </div>
+        </Parallax>
+      </a>
+      <Parallax bgImage={Frisbee} strength={500}>
+        <div className="parallaxFive"></div>
+      </Parallax>
+      {/* eslint-disable-next-line  */}
+      <a name="BlogPosts">
+        <Parallax strength={200}>
+          <div className="parallaxSix">
+            <div className="blogPostsContainer">
+              <div style={{ width: "60%" }}>
+                <h1 className="projectsHeaderText">Blog Posts</h1>
+                <h1 className="projectsHeaderText"></h1>
+                <h2 className="aboutMeBody">
+                  I've decided to start a blog! I'll be writing about all kinds
+                  of technical problems and ideas that spark my interest. It
+                  will mostly be about math, computer science, and programming
+                  concepts that I have a lot to say about and want to share. I'm
+                  hoping to write extended series exploring some topics I know
+                  about, and hopefully learning even more about them in the
+                  process. Very broadly, some of these topics include branches
+                  of math like set theory and order theory, and some branches of
+                  computer science such as garbage collection and concurrency.
+                </h2>
+                <h2 className="aboutMeBody">
+                  Additionally, this semester I will be TAing 21-127, Concepts
+                  of Mathematics. As such, I will be posting a series of blog
+                  posts exploring the topics covered in the course week to week.
+                  These will not cover topics as in-depth as lectures or
+                  recitations, but I hope that they will be useful to my
+                  students for understanding topics more intuitively, as well as
+                  getting some sense for how I think about these ideas.
+                </h2>
+                <h2 className="aboutMeBody">
+                  For the time being, you can click <a href="/blog">here</a> or
+                  on the button in the top bar to navigate to my blog, and
+                  explore the different things I've posted so far!
+                </h2>
               </div>
             </div>
           </div>

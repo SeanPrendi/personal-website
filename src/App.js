@@ -5,11 +5,12 @@ import BlogPost from "./pages/blogpost";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import postlist from "./data/postlist";
 import posts from "./data/posts";
-// import TopBar from "./components/topbar";
+import TopBar from "./components/topbar";
 
 function App() {
   return (
     <>
+      <TopBar />
       <Router>
         <Switch>
           <Route exact path="/">
