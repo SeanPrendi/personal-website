@@ -164,7 +164,7 @@ function MainPage() {
                 </div>
               </div>
             </div>
-            <h1 className="projectsHeaderText"></h1>
+            <div className="projectsHeaderText" />
           </div>
         </Parallax>
       </a>
@@ -178,7 +178,7 @@ function MainPage() {
             <div className="blogPostsContainer">
               <div style={{ width: "60%" }}>
                 <h1 className="projectsHeaderText">Blog Posts</h1>
-                <h1 className="projectsHeaderText"></h1>
+                <div className="projectsHeaderText" />
                 <h2 className="aboutMeBody">
                   I've decided to start a blog! I'll be writing about all kinds
                   of technical problems and ideas that spark my interest. It

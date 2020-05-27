@@ -34,7 +34,6 @@ export default function TopBar() {
               <DropdownItem href="/#About">About Me</DropdownItem>
               <DropdownItem href="/#Projects">Projects</DropdownItem>
               <DropdownItem href="/#BlogPosts">Blog Posts</DropdownItem>
-              <DropdownItem href="/#ContactMe">Contact Me</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>

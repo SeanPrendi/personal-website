@@ -7,9 +7,7 @@ import RemarkMathPlugin from "remark-math";
 function MarkdownRender(props) {
   const newProps = {
     ...props,
-    plugins: [
-      RemarkMathPlugin
-    ],
+    plugins: [RemarkMathPlugin],
     renderers: {
       ...props.renderers,
       math: props => <MathJax.Node formula={props.value} />,

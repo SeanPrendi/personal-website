@@ -2,7 +2,7 @@ import React from "react";
 import Headshot from "../assets/Headshot.png";
 import { withRouter, Link } from "react-router-dom";
 import "../App.css";
-import postlist from "../data/postlist";
+import postlist from "../data/postlist.json";
 
 function BlogPage() {
   return (
@@ -12,10 +12,22 @@ function BlogPage() {
         <img src={Headshot} className="blogphoto" alt="headshot" />
       </div>
       {postlist.map((post, idx) => {
+        let name = post.name;
+        let title = post.title;
+        let date = post.date;
         return (
-          <p style={{fontSize: "20px"}} key={idx} >
-            <Link to={"/" + post}>{post}</Link>
-          </p>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              fontSize: "20px",
+              justifyContent: "center"
+            }}
+            key={idx}
+          >
+            <div>{date}:&nbsp;&nbsp;</div>
+            <Link to={"/" + name}> {title}</Link>
+          </div>
         );
       })}
     </div>
