@@ -41,7 +41,29 @@ export default function TopBar() {
             <NavLink href="/blog">Blog</NavLink>
           </NavItem>
         </Nav>
-        <NavbarText>Simple Text</NavbarText>
+        <NavbarText style={{ fontSize: "30px" }}>
+          {" "}
+          <a class="s_label" href="https://github.com/SeanPrendi">
+            <span class="fa fa-github"></span>
+          </a>
+        </NavbarText>
+        <div style={{ paddingLeft: "2%" }}></div>
+        <NavbarText style={{ fontSize: "30px" }}>
+          {" "}
+          <a
+            class="s_label"
+            href="https://www.linkedin.com/in/sean-prendi-904943162/"
+          >
+            <span class="fa fa-linkedin"></span>
+          </a>
+        </NavbarText>
+        <div style={{ paddingLeft: "2%" }}></div>
+        <NavbarText style={{ fontSize: "30px" }}>
+          {" "}
+          <a class="s_label" href="mailto:sprendi@andrew.cmu.edu">
+            <span class="fa fa-envelope-o"></span>
+          </a>
+        </NavbarText>
       </Collapse>
     </Navbar>
   );
