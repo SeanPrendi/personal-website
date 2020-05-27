@@ -30,14 +30,14 @@ export default function TopBar() {
               Sections
             </DropdownToggle>
             <DropdownMenu right>
-              <DropdownItem href="/">Home</DropdownItem>
-              <DropdownItem href="/#About">About Me</DropdownItem>
-              <DropdownItem href="/#Projects">Projects</DropdownItem>
-              <DropdownItem href="/#BlogPosts">Blog Posts</DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/"}>Home</DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#About"}>About Me</DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#Projects"}>Projects</DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#BlogPosts"}>Blog Posts</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>
-            <NavLink href="/blog">Blog</NavLink>
+            <NavLink href={process.env.PUBLIC_URL + "/blog"}>Blog</NavLink>
           </NavItem>
         </Nav>
         <NavbarText style={{ fontSize: "30px" }}>

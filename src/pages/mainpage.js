@@ -200,7 +200,7 @@ function MainPage() {
                   getting some sense for how I think about these ideas.
                 </h2>
                 <h2 className="aboutMeBody">
-                  For the time being, you can click <a href="/blog">here</a> or
+                  For the time being, you can click <a href={process.env.PUBLIC_URL + "/blog"}>here</a> or
                   on the button in the top bar to navigate to my blog, and
                   explore the different things I've posted so far!
                 </h2>
