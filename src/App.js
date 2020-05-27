@@ -5,35 +5,37 @@ import BlogPost from "./pages/blogpost";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import postlist from "./data/postlist";
 import posts from "./data/posts";
+// import TopBar from "./components/topbar";
 
 function App() {
-  console.log(posts);
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <MainPage />
-        </Route>
-        <Route path="/blog">
-          <BlogPage />
-        </Route>
-        {postlist.map((post, idx) => {
-          return (
-            <Route path={"/" + post} key={idx}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center"
-                }}
-              >
-                <BlogPost post={posts[post]} />
-              </div>
-            </Route>
-          );
-        })}
-      </Switch>
-    </Router>
+    <>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route path="/blog">
+            <BlogPage />
+          </Route>
+          {postlist.map((post, idx) => {
+            return (
+              <Route path={"/" + post} key={idx}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}
+                >
+                  <BlogPost post={posts[post]} />
+                </div>
+              </Route>
+            );
+          })}
+        </Switch>
+      </Router>
+    </>
   );
 }
 
