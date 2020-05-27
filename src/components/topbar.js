@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, withRouter } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -14,7 +15,7 @@ import {
   NavbarText
 } from "reactstrap";
 
-export default function TopBar() {
+function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -30,14 +31,24 @@ export default function TopBar() {
               Sections
             </DropdownToggle>
             <DropdownMenu right>
-              <DropdownItem href={process.env.PUBLIC_URL + "/"}>Home</DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#About"}>About Me</DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#Projects"}>Projects</DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#BlogPosts"}>Blog Posts</DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/"}>
+                Home
+              </DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#About"}>
+                About Me
+              </DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#Projects"}>
+                Projects
+              </DropdownItem>
+              <DropdownItem href={process.env.PUBLIC_URL + "/#BlogPosts"}>
+                Blog Posts
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>
-            <NavLink href={process.env.PUBLIC_URL + "/blog"}>Blog</NavLink>
+            <Link to={process.env.PUBLIC_URL + "/blog"}>
+              <NavLink>Blog</NavLink>
+            </Link>
           </NavItem>
         </Nav>
         <NavbarText style={{ fontSize: "30px" }}>
@@ -67,3 +78,5 @@ export default function TopBar() {
     </Navbar>
   );
 }
+
+export default withRouter(TopBar);

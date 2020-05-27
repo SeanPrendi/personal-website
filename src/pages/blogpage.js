@@ -3,10 +3,12 @@ import Headshot from "../assets/Headshot.png";
 import { withRouter, Link } from "react-router-dom";
 import "../App.css";
 import postlist from "../data/postlist.json";
+import TopBar from "../components/topbar";
 
 function BlogPage() {
   return (
     <div className="Blog">
+      <TopBar />
       <div className="spacing" />
       <div className="headshotContainer">
         <img src={Headshot} className="blogphoto" alt="headshot" />

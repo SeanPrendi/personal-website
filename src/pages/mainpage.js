@@ -9,11 +9,13 @@ import MomentsLogo from "../assets/momentsCrop.png";
 import NextUpLogo from "../assets/nextUpLogo.png";
 import Calorimager from "../assets/Apple.png";
 import Resume from "../data/resume.pdf";
+import TopBar from "../components/topbar";
 import "../App.css";
 
 function MainPage() {
   return (
     <div className="App">
+      <TopBar />
       {/* eslint-disable-next-line  */}
       <a name="">
         <Parallax bgImage={BGphoto} strength={600}>
@@ -200,9 +202,10 @@ function MainPage() {
                   getting some sense for how I think about these ideas.
                 </h2>
                 <h2 className="aboutMeBody">
-                  For the time being, you can click <a href={process.env.PUBLIC_URL + "/blog"}>here</a> or
-                  on the button in the top bar to navigate to my blog, and
-                  explore the different things I've posted so far!
+                  For the time being, you can click{" "}
+                  <a href={process.env.PUBLIC_URL + "/blog"}>here</a> or on the
+                  button in the top bar to navigate to my blog, and explore the
+                  different things I've posted so far!
                 </h2>
               </div>
             </div>
