@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0aed2f30.chunk.css",
-    "main.js": "/static/js/main.3edf1e7b.chunk.js",
-    "main.js.map": "/static/js/main.3edf1e7b.chunk.js.map",
+    "main.js": "/static/js/main.e83260b1.chunk.js",
+    "main.js.map": "/static/js/main.e83260b1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.edaf7a34.js",
     "runtime-main.js.map": "/static/js/runtime-main.edaf7a34.js.map",
     "static/css/2.ddfacf9b.chunk.css": "/static/css/2.ddfacf9b.chunk.css",
-    "static/js/2.9cf47334.chunk.js": "/static/js/2.9cf47334.chunk.js",
-    "static/js/2.9cf47334.chunk.js.map": "/static/js/2.9cf47334.chunk.js.map",
+    "static/js/2.c715a504.chunk.js": "/static/js/2.c715a504.chunk.js",
+    "static/js/2.c715a504.chunk.js.map": "/static/js/2.c715a504.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4740dcdd9f4eb70bfaf65043c3d61894.js": "/precache-manifest.4740dcdd9f4eb70bfaf65043c3d61894.js",
+    "precache-manifest.4d64980ff38e5f5de9cd8ceb60326314.js": "/precache-manifest.4d64980ff38e5f5de9cd8ceb60326314.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ddfacf9b.chunk.css.map": "/static/css/2.ddfacf9b.chunk.css.map",
     "static/css/main.0aed2f30.chunk.css.map": "/static/css/main.0aed2f30.chunk.css.map",
-    "static/js/2.9cf47334.chunk.js.LICENSE.txt": "/static/js/2.9cf47334.chunk.js.LICENSE.txt",
+    "static/js/2.c715a504.chunk.js.LICENSE.txt": "/static/js/2.c715a504.chunk.js.LICENSE.txt",
     "static/media/Apple.png": "/static/media/Apple.198057eb.png",
     "static/media/Axioms-Definitions-and-Theorems.md": "/static/media/Axioms-Definitions-and-Theorems.2722b5ea.md",
     "static/media/Frisbee.png": "/static/media/Frisbee.cde24e01.png",
@@ -28,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.edaf7a34.js",
     "static/css/2.ddfacf9b.chunk.css",
-    "static/js/2.9cf47334.chunk.js",
+    "static/js/2.c715a504.chunk.js",
     "static/css/main.0aed2f30.chunk.css",
-    "static/js/main.3edf1e7b.chunk.js"
+    "static/js/main.e83260b1.chunk.js"
   ]
 }
