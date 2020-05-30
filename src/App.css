@@ -5,6 +5,7 @@
 
 .Blog {
   text-align: center;
+  width: 80vw
 }
 
 .App-header {
@@ -92,8 +93,8 @@
 }
 
 .blogphoto {
-  width: 35vh;
-  height: 35vh;
+  width: 30vh;
+  height: 30vh;
   object-fit: cover;
   border-radius: 50%;
   object-position: 50% 15%;
@@ -216,4 +217,11 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
+}
+
+.blogPostTitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: center;
 }

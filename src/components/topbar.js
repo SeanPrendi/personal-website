@@ -59,21 +59,21 @@ function TopBar() {
           </NavItem>
         </Nav>
         <NavbarText style={{ fontSize: "30px" }}>
-          <a class="s_label" href="https://github.com/SeanPrendi">
-            <span class="fa fa-github"></span>
+          <a className="s_label" href="https://github.com/SeanPrendi">
+            <span className="fa fa-github"></span>
           </a>
         </NavbarText>
         <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
           <a
-            class="s_label"
+            className="s_label"
             href="https://www.linkedin.com/in/sean-prendi-904943162/"
           >
-            <span class="fa fa-linkedin"></span>
+            <span className="fa fa-linkedin"></span>
           </a>
         </NavbarText>
         <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
-          <a class="s_label" href="mailto:sprendi@andrew.cmu.edu">
-            <span class="fa fa-envelope-o"></span>
+          <a className="s_label" href="mailto:sprendi@andrew.cmu.edu">
+            <span className="fa fa-envelope-o"></span>
           </a>
         </NavbarText>
       </Collapse>
