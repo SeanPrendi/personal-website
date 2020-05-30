@@ -41,6 +41,7 @@ function BlogPost(props) {
         width: "60vw"
       }}
     >
+      {/* <TopBar /> */}
       <div style={{ alignItems: "center" }}>
         <MarkdownRender source={mdText} />
       </div>

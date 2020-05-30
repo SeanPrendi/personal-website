@@ -2,15 +2,15 @@ import React from "react";
 import MainPage from "./pages/mainpage";
 import BlogPage from "./pages/blogpage";
 import BlogPost from "./pages/blogpost";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import postlist from "./data/postlist.json";
-// import TopBar from "./components/topbar";
+import TopBar from "./components/topbar";
 
 function App() {
   return (
     <>
-      {/* <TopBar /> */}
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
+        <TopBar />
         <Switch>
           <Route exact path="/">
             <MainPage />

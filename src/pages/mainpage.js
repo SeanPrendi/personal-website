@@ -9,15 +9,14 @@ import MomentsLogo from "../assets/momentsCrop.png";
 import NextUpLogo from "../assets/nextUpLogo.png";
 import Calorimager from "../assets/Apple.png";
 import Resume from "../data/resume.pdf";
-import TopBar from "../components/topbar";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function MainPage() {
   return (
     <div className="App">
-      <TopBar />
       {/* eslint-disable-next-line  */}
-      <a name="">
+      <a id="">
         <Parallax bgImage={BGphoto} strength={600}>
           <div className="firstParallax">
             <div style={{ height: 500 }}>
@@ -35,7 +34,7 @@ function MainPage() {
         </Parallax>
       </a>
       {/* eslint-disable-next-line  */}
-      <a name="About">
+      <a id="About">
         <Parallax strength={0}>
           <div className="secondParallax">
             <div className="aboutMeContainer">
@@ -76,7 +75,7 @@ function MainPage() {
         <div className="parallaxThree"></div>
       </Parallax>
       {/* eslint-disable-next-line  */}
-      <a name="Projects">
+      <a id="Projects">
         <Parallax strength={200}>
           <div className="parallaxFour">
             <div className="projectsContainer">
@@ -174,7 +173,7 @@ function MainPage() {
         <div className="parallaxFive"></div>
       </Parallax>
       {/* eslint-disable-next-line  */}
-      <a name="BlogPosts">
+      <a id="BlogPosts">
         <Parallax strength={200}>
           <div className="parallaxSix">
             <div className="blogPostsContainer">
@@ -202,10 +201,9 @@ function MainPage() {
                   getting some sense for how I think about these ideas.
                 </h2>
                 <h2 className="aboutMeBody">
-                  For the time being, you can click{" "}
-                  <a href={process.env.PUBLIC_URL + "/blog"}>here</a> or on the
-                  button in the top bar to navigate to my blog, and explore the
-                  different things I've posted so far!
+                  For the time being, you can click <Link to="/blog">here</Link>{" "}
+                  or on the button in the top bar to navigate to my blog, and
+                  explore the different things I've posted so far!
                 </h2>
               </div>
             </div>

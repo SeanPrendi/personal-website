@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -14,6 +14,7 @@ import {
   DropdownItem,
   NavbarText
 } from "reactstrap";
+import { HashLink as Link } from "react-router-hash-link";
 
 function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,13 @@ function TopBar() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="light" light expand="md" sticky="top">
+    <Navbar
+      color="light"
+      light
+      expand="md"
+      sticky="top"
+      style={{ width: "100vw" }}
+    >
       <NavbarBrand>Sean Prendi</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
@@ -34,15 +41,15 @@ function TopBar() {
               <DropdownItem href={process.env.PUBLIC_URL + "/"}>
                 Home
               </DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#About"}>
-                About Me
-              </DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#Projects"}>
-                Projects
-              </DropdownItem>
-              <DropdownItem href={process.env.PUBLIC_URL + "/#BlogPosts"}>
-                Blog Posts
-              </DropdownItem>
+              <Link to={process.env.PUBLIC_URL + "/#About"}>
+                <DropdownItem>About Me</DropdownItem>
+              </Link>
+              <Link to={process.env.PUBLIC_URL + "/#Projects"}>
+                <DropdownItem>Projects</DropdownItem>
+              </Link>
+              <Link to={process.env.PUBLIC_URL + "/#BlogPosts"}>
+                <DropdownItem>Blog Posts</DropdownItem>
+              </Link>
             </DropdownMenu>
           </UncontrolledDropdown>
           <NavItem>
@@ -52,14 +59,11 @@ function TopBar() {
           </NavItem>
         </Nav>
         <NavbarText style={{ fontSize: "30px" }}>
-          {" "}
           <a class="s_label" href="https://github.com/SeanPrendi">
             <span class="fa fa-github"></span>
           </a>
         </NavbarText>
-        <div style={{ paddingLeft: "2%" }}></div>
-        <NavbarText style={{ fontSize: "30px" }}>
-          {" "}
+        <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
           <a
             class="s_label"
             href="https://www.linkedin.com/in/sean-prendi-904943162/"
@@ -67,9 +71,7 @@ function TopBar() {
             <span class="fa fa-linkedin"></span>
           </a>
         </NavbarText>
-        <div style={{ paddingLeft: "2%" }}></div>
-        <NavbarText style={{ fontSize: "30px" }}>
-          {" "}
+        <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
           <a class="s_label" href="mailto:sprendi@andrew.cmu.edu">
             <span class="fa fa-envelope-o"></span>
           </a>
