@@ -83,7 +83,7 @@ First we will show that $0$ is an element of $X$. We know by definition A1 that 
 Next, let $x$ be a natural number in $X$. We want to show that $S(x)$ is in $X$ as well.
 $$
 \begin{align*}
-	0 + S(X) &= S(0 + x) &&\text{By A2}\\
+	0 + S(x) &= S(0 + x) &&\text{By A2}\\
 	&=S(x) &&\text{Because $x$ is in $X$}
 \end{align*}
 $$
