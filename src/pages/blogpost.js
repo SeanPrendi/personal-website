@@ -12,7 +12,7 @@ function MarkdownRender(props) {
       ...props.renderers,
       math: props => <MathJax.Node formula={props.value} />,
       inlineMath: props => <MathJax.Node inline formula={props.value} />,
-      sup: 'sup'
+      sup: "sup"
     }
   };
   return (
