@@ -10,11 +10,11 @@ If you've ever cracked open a math textbook, you've probably seen the words **th
 
 #### <u>Axioms</u>
 
-Axioms are statements that are seen as self-evident, or are taken to be true without proof. If this is your first exposure to the concept of an axiom but you've done proof based math before, that definition might feel a bit odd. On some level, math is the study of what can be proved based on things that we already know to be true. So how can axioms be meaningful if they're not proved? Well, axioms are not statments whose truth value we want to evaluate but instead statements that we assume to be true, then use their truth to derive other truths^1^.
+Axioms are statements that are seen as self-evident, or are taken to be true without proof. If this is your first exposure to the concept of an axiom but you've done proof based math before, that definition might feel a bit odd. On some level, math is the study of what can be proved based on things that we already know to be true. So how can axioms be meaningful if they're not proved? Well, axioms are not statments whose truth value we want to evaluate but instead statements that we assume to be true, then use their truth to derive other truths<sup>1</sup>.
 
 The beauty of math is that every idea that a mathematician proves follows logically from an idea someone else has proved. Unlike the natural sciences there is no concept of experiment, no one can say "I've tried this idea for a lot of examples, and it's worked every time, so it's true!" Rather, for something to be proven it has to follow from something else through a series of logical deductions. The bad news of this, however, is that there is no statement that can be proved without starting somewhere. Because everything follows from something, there is nothing that follows from nothing. So in order to meaningfully talk about anything, from the simplest arithmetic to the most complicated proofs, you have to start somewhere. The axioms are that "somewhere".
 
-Another good way to think about this idea is to imagine math as a game. In this sense, axioms are the rules of the game. If you're playing chess, you don't have to justify the fact that white moves first, the fact that the bishops move diagonally, or the fact that the game is over when the king has no where to move. In fact, you can't justify them beyond the fact that everyone has agreed to play by the same rules. And just like the rules of a game, axioms are not a single, fixed thing. In much the same way as there are different games, each with different rules, there are different axiomatic systems, each with different axioms. One example is the Peano Axioms, which we explore at the end of this article. Another is called Zermelo-Fraenkel Set Theory, or ZF, which we will look into in the another blog post. Each of these has different axioms, and they differ in the statements they are capable of proving^2^.
+Another good way to think about this idea is to imagine math as a game. In this sense, axioms are the rules of the game. If you're playing chess, you don't have to justify the fact that white moves first, the fact that the bishops move diagonally, or the fact that the game is over when the king has no where to move. In fact, you can't justify them beyond the fact that everyone has agreed to play by the same rules. And just like the rules of a game, axioms are not a single, fixed thing. In much the same way as there are different games, each with different rules, there are different axiomatic systems, each with different axioms. One example is the Peano Axioms, which we explore at the end of this article. Another is called Zermelo-Fraenkel Set Theory, or ZF, which we will look into in the another blog post. Each of these has different axioms, and they differ in the statements they are capable of proving<sup>2</sup>.
 
 
 
@@ -46,7 +46,7 @@ One last note before we get into them, I think it's important to note that these
 
 So, I am now going to ask you to do something rather unnatural: I would like you to forget everything you know about math. Or at least, forget about it for now. The Peano Axioms may feel very simple (they are) and in some other axiomatic system these are things that you can define or prove rather than axioms. However, right now we're *only* going to be working with these axioms. As simple as they may feel, we must assume them, and then we will make a definition and prove a theorem from them. 
 
-Without further ado, the Peano Axioms^3^ are as follows:
+Without further ado, the Peano Axioms<sup>3</sup> are as follows:
 
 P1. Zero is a natural number
 
@@ -56,7 +56,7 @@ P3. There is no natural number $x$ such that $S(x) = 0$
 
 P4. If $S(x) = S(y)$ then $x = y$.
 
-P5. If a set, $X$, contains $0$ and the successor of every number is in $X$, then $X$ contains all of the natural numbers^4^
+P5. If a set, $X$, contains $0$ and the successor of every number is in $X$, then $X$ contains all of the natural numbers<sup>4</sup>
 
 So, we've listed our axioms, now let's make some definitions. 
 
@@ -76,7 +76,7 @@ And now equipped with axioms and a definition of addition, we can prove the foll
 
 **Theorem:** Zero is the additive identity. That is, for any natural number $x$, we have that $x + 0 = 0 + x = x$.
 
-**Proof:** The fact that $x + 0 = x$ is part of the definition of addition, so we only need to prove that $0 + x = x$. Let $X$ be the set of all natural numbers such that $0 + x = x$. Our technique will be as follows: if we can show that $0$ is an element of $X$, and we can show that for any element of $X$, the successor of that element is in $X$, then by P5 we will be able to conclude that $X$ contains every natural number, and we will be done^5^. 
+**Proof:** The fact that $x + 0 = x$ is part of the definition of addition, so we only need to prove that $0 + x = x$. Let $X$ be the set of all natural numbers such that $0 + x = x$. Our technique will be as follows: if we can show that $0$ is an element of $X$, and we can show that for any element of $X$, the successor of that element is in $X$, then by P5 we will be able to conclude that $X$ contains every natural number, and we will be done<sup>5</sup>. 
 
 First we will show that $0$ is an element of $X$. We know by definition A1 that $0 + 0 = 0$, so $0$ is indeed in $X$.
 
