@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.0aed2f30.chunk.css",
-    "main.js": "/static/js/main.c6d02cd8.chunk.js",
-    "main.js.map": "/static/js/main.c6d02cd8.chunk.js.map",
+    "main.js": "/static/js/main.bd3cb320.chunk.js",
+    "main.js.map": "/static/js/main.bd3cb320.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.edaf7a34.js",
     "runtime-main.js.map": "/static/js/runtime-main.edaf7a34.js.map",
     "static/css/2.ddfacf9b.chunk.css": "/static/css/2.ddfacf9b.chunk.css",
     "static/js/2.435c44ac.chunk.js": "/static/js/2.435c44ac.chunk.js",
     "static/js/2.435c44ac.chunk.js.map": "/static/js/2.435c44ac.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.abff557360e83a58925f44046e9734e6.js": "/precache-manifest.abff557360e83a58925f44046e9734e6.js",
+    "precache-manifest.6ebf7fd82d6347897ef298e6e3494bef.js": "/precache-manifest.6ebf7fd82d6347897ef298e6e3494bef.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ddfacf9b.chunk.css.map": "/static/css/2.ddfacf9b.chunk.css.map",
     "static/css/main.0aed2f30.chunk.css.map": "/static/css/main.0aed2f30.chunk.css.map",
     "static/js/2.435c44ac.chunk.js.LICENSE.txt": "/static/js/2.435c44ac.chunk.js.LICENSE.txt",
     "static/media/Apple.png": "/static/media/Apple.198057eb.png",
-    "static/media/Axioms-Definitions-and-Theorems.md": "/static/media/Axioms-Definitions-and-Theorems.2722b5ea.md",
+    "static/media/Axioms-Definitions-and-Theorems.md": "/static/media/Axioms-Definitions-and-Theorems.358e3a84.md",
     "static/media/Frisbee.png": "/static/media/Frisbee.cde24e01.png",
     "static/media/Hack-112.jpg": "/static/media/Hack-112.18408ba0.jpg",
     "static/media/Headshot.png": "/static/media/Headshot.e9d5d157.png",
@@ -30,6 +30,6 @@
     "static/css/2.ddfacf9b.chunk.css",
     "static/js/2.435c44ac.chunk.js",
     "static/css/main.0aed2f30.chunk.css",
-    "static/js/main.c6d02cd8.chunk.js"
+    "static/js/main.bd3cb320.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58e34cf271cba31a6f58d3b099e584cf",
+    "revision": "1a59c571da9a830cf48895de4d6b0544",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.ddfacf9b.chunk.css"
   },
   {
-    "revision": "c836fa16a7c30b05ccad",
+    "revision": "36c1e35be5f90318e4b0",
     "url": "/static/css/main.0aed2f30.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.435c44ac.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c836fa16a7c30b05ccad",
-    "url": "/static/js/main.c6d02cd8.chunk.js"
+    "revision": "36c1e35be5f90318e4b0",
+    "url": "/static/js/main.bd3cb320.chunk.js"
   },
   {
     "revision": "172d9e3343d29cb036c9",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Apple.198057eb.png"
   },
   {
-    "revision": "2722b5ea106b9184bed0166ceb9797c3",
-    "url": "/static/media/Axioms-Definitions-and-Theorems.2722b5ea.md"
+    "revision": "358e3a849fa1136f82413ca671e4a7f6",
+    "url": "/static/media/Axioms-Definitions-and-Theorems.358e3a84.md"
   },
   {
     "revision": "cde24e0112aa5e69931e4cc92d91c674",
