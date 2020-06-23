@@ -10,23 +10,37 @@ import NextUpLogo from "../assets/nextUpLogo.png";
 import Calorimager from "../assets/Apple.png";
 import Resume from "../data/resume.pdf";
 import { Link } from "react-router-dom";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 import "../App.css";
 
 function MainPage() {
+  const { height, width } = useWindowDimensions();
+  const desktop = height * 0.7 <= width; // Good proxy for being on a desktop
   return (
     <div className="App">
       {/* eslint-disable-next-line  */}
       <a id="">
         <Parallax bgImage={BGphoto} strength={600}>
           <div className="firstParallax">
-            <div style={{ height: 500 }}>
-              <h1 className="titleText">
+            <div>
+              <h1
+                className="titleText"
+                style={{ fontSize: desktop ? "" : "5vmin" }}
+              >
                 Sean Prendi <br />
                 Discrete Math and Logic <br /> Carnegie Mellon Class of 2022
               </h1>
               <div className="buttonContainer">
                 <a href={Resume}>
-                  <div class="ghost-button">Resume</div>
+                  <div
+                    class="ghost-button"
+                    style={{
+                      width: desktop ? "20vmin" : "15vmax",
+                      fontSize: desktop ? "3vmin" : "5vmin"
+                    }}
+                  >
+                    Resume
+                  </div>
                 </a>
               </div>
             </div>
@@ -37,13 +51,41 @@ function MainPage() {
       <a id="About">
         <Parallax strength={0}>
           <div className="secondParallax">
-            <div className="aboutMeContainer">
-              <div className="headshotContainer">
-                <img src={Headshot} className="headshot" alt="headshot" />
+            <div
+              className="aboutMeContainer"
+              style={{
+                flexDirection: desktop ? "" : "column",
+                paddingLeft: desktop ? "" : "2vh",
+                paddingRight: desktop ? "" : "2vh",
+                paddingBottom: desktop ? "" : "2vh"
+              }}
+            >
+              <div
+                className="headshotContainer"
+                style={{ paddingTop: desktop ? "" : "3vh" }}
+              >
+                <img
+                  src={Headshot}
+                  className="headshot"
+                  alt="headshot"
+                  style={{
+                    width: desktop ? "" : "30vh",
+                    height: desktop ? "" : "30vh"
+                  }}
+                />
               </div>
-              <div className="aboutMeContent">
+              <div
+                className="aboutMeContent"
+                style={{
+                  textAlign: desktop ? "" : "center",
+                  paddingRight: desktop ? "" : "0"
+                }}
+              >
                 <h1 className="aboutMeText">About Me</h1>
-                <h2 className="aboutMeBody">
+                <h2
+                  className="aboutMeBody"
+                  style={{ fontSize: desktop ? "" : "20px" }}
+                >
                   Hi there! My name is Sean Prendi.
                   <br />
                   <br />
@@ -81,10 +123,17 @@ function MainPage() {
             <div className="projectsContainer">
               <h1 className="projectsHeaderText">Projects</h1>
               {/* Moments */}
-              <div className="leftProjectContainer">
+              <div
+                className={
+                  desktop
+                    ? "leftProjectContainer"
+                    : "leftMobileProjectContainer"
+                }
+              >
                 <a
                   href="https://github.com/jchengjr77/moments-app"
                   className="logoWrapper"
+                  style={{ alignSelf: desktop ? "" : "center" }}
                 >
                   <img
                     src={MomentsLogo}
@@ -104,7 +153,13 @@ function MainPage() {
                 </div>
               </div>
               {/* Next Up */}
-              <div className="rightProjectContainer">
+              <div
+                className={
+                  desktop
+                    ? "rightProjectContainer"
+                    : "rightMobileProjectContainer"
+                }
+              >
                 <div className="rightProjectDescCont">
                   <h1 className="projectTitleText">Next-Up</h1>
                   <h2 className="projectBodyText">
@@ -132,6 +187,7 @@ function MainPage() {
                 <a
                   href="https://github.com/diegofinni/NextUp"
                   className="logoWrapper"
+                  style={{ alignSelf: desktop ? "" : "center" }}
                 >
                   <img
                     src={NextUpLogo}
@@ -141,10 +197,17 @@ function MainPage() {
                 </a>
               </div>
               {/* Calorimager */}
-              <div className="leftProjectContainer">
+              <div
+                className={
+                  desktop
+                    ? "leftProjectContainer"
+                    : "leftMobileProjectContainer"
+                }
+              >
                 <a
                   href="https://github.com/SeanPrendi/Calorimager"
                   className="logoWrapper"
+                  style={{ alignSelf: desktop ? "" : "center" }}
                 >
                   <img
                     src={Calorimager}
@@ -175,36 +238,55 @@ function MainPage() {
       {/* eslint-disable-next-line  */}
       <a id="BlogPosts">
         <Parallax strength={200}>
-          <div className="parallaxSix">
-            <div className="blogPostsContainer">
-              <div style={{ width: "60%" }}>
+          <div
+            className="parallaxSix"
+            style={{ maxHeight: desktop ? "" : "1000vh" }}
+          >
+            <div
+              className="blogPostsContainer"
+              style={{ paddingBottom: desktop ? "" : "3vh" }}
+            >
+              <div style={{ width: desktop ? "60vw" : "85vw" }}>
                 <h1 className="projectsHeaderText">Blog Posts</h1>
                 <div className="projectsHeaderText" />
-                <h2 className="aboutMeBody">
-                  I've decided to start a blog! I'll be writing about all kinds
-                  of technical problems and ideas that spark my interest. It
-                  will mostly be about math, computer science, and programming
-                  concepts that I have a lot to say about and want to share. I'm
-                  hoping to write extended series exploring some topics I know
-                  about, and hopefully learning even more about them in the
-                  process. Very broadly, some of these topics include branches
-                  of math like set theory and order theory, and some branches of
-                  computer science such as garbage collection and concurrency.
-                </h2>
-                <h2 className="aboutMeBody">
-                  Additionally, this semester I will be TAing 21-127, Concepts
-                  of Mathematics. As such, I will be posting a series of blog
-                  posts exploring the topics covered in the course week to week.
-                  These will not cover topics as in-depth as lectures or
-                  recitations, but I hope that they will be useful to my
-                  students for understanding topics more intuitively, as well as
-                  getting some sense for how I think about these ideas.
-                </h2>
-                <h2 className="aboutMeBody">
-                  For the time being, you can click <Link to="/blog">here</Link>{" "}
-                  or on the button in the top bar to navigate to my blog, and
-                  explore the different things I've posted so far!
-                </h2>
+                <div>
+                  <h2
+                    className="blogSectionText"
+                    style={{ fontSize: desktop ? "" : "5vmin" }}
+                  >
+                    I've decided to start a blog! I'll be writing about all
+                    kinds of technical problems and ideas that spark my
+                    interest. It will mostly be about math, computer science,
+                    and programming concepts that I have a lot to say about and
+                    want to share. I'm hoping to write extended series exploring
+                    some topics I know about, and hopefully learning even more
+                    about them in the process. Very broadly, some of these
+                    topics include branches of math like set theory and order
+                    theory, and some branches of computer science such as
+                    garbage collection and concurrency.
+                  </h2>
+                  <h2
+                    className="blogSectionText"
+                    style={{ fontSize: desktop ? "" : "5vmin" }}
+                  >
+                    Additionally, this semester I will be TAing 21-127, Concepts
+                    of Mathematics. As such, I will be posting a series of blog
+                    posts exploring the topics covered in the course week to
+                    week. These will not cover topics as in-depth as lectures or
+                    recitations, but I hope that they will be useful to my
+                    students for understanding topics more intuitively, as well
+                    as getting some sense for how I think about these ideas.
+                  </h2>
+                  <h2
+                    className="blogSectionText"
+                    style={{ fontSize: desktop ? "" : "5vmin" }}
+                  >
+                    For the time being, you can click{" "}
+                    <Link to="/blog">here</Link> or on the button in the top bar
+                    to navigate to my blog, and explore the different things
+                    I've posted so far!
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
