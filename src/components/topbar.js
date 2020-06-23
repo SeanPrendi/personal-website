@@ -27,7 +27,7 @@ function TopBar() {
       light
       expand="md"
       sticky="top"
-      style={{ width: "100vw" }}
+      style={{ maxWidth: "100vw" }}
     >
       <NavbarBrand>Sean Prendi</NavbarBrand>
       <NavbarToggler onClick={toggle} />
@@ -58,12 +58,12 @@ function TopBar() {
             </Link>
           </NavItem>
         </Nav>
-        <NavbarText style={{ fontSize: "30px" }}>
+        <NavbarText style={{ fontSize: "30px", paddingRight: "2%" }}>
           <a className="s_label" href="https://github.com/SeanPrendi">
             <span className="fa fa-github"></span>
           </a>
         </NavbarText>
-        <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
+        <NavbarText style={{ fontSize: "30px", paddingRight: "2%" }}>
           <a
             className="s_label"
             href="https://www.linkedin.com/in/sean-prendi-904943162/"
@@ -71,7 +71,7 @@ function TopBar() {
             <span className="fa fa-linkedin"></span>
           </a>
         </NavbarText>
-        <NavbarText style={{ fontSize: "30px", paddingLeft: "2%" }}>
+        <NavbarText style={{ fontSize: "30px" }}>
           <a className="s_label" href="mailto:sprendi@andrew.cmu.edu">
             <span className="fa fa-envelope-o"></span>
           </a>
